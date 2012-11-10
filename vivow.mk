@@ -192,7 +192,21 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-    device/htc/vivow/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko
+    device/htc/vivow/prebuilt/bcm4329.ko:system/lib/modules/bcm4329.ko \
+    device/htc/vivow/prebuilt/auth_rpcgss.ko:system/lib/modules/auth_rpcgss.ko \
+    device/htc/vivow/prebuilt/cifs.ko:system/lib/modules/cifs.ko \
+    device/htc/vivow/prebuilt/lockd.ko:system/lib/modules/lockd.ko \
+    device/htc/vivow/prebuilt/lzo_compress.ko:system/lib/modules/lzo_compress.ko \
+    device/htc/vivow/prebuilt/lzo_decompress.ko:system/lib/modules/lzo_decompress.ko \
+    device/htc/vivow/prebuilt/nfs.ko:system/lib/modules/nfs.ko \
+    device/htc/vivow/prebuilt/rpcsec_gss_krb5.ko:system/lib/modules/rpcsec_gss_krb5.ko \
+    device/htc/vivow/prebuilt/sunrpc.ko:system/lib/modules/sunrpc.ko \
+    device/htc/vivow/prebuilt/usbcore.ko:system/lib/modules/usbcore.ko \
+    device/htc/vivow/prebuilt/usbhid.ko:system/lib/modules/usbhid.ko \
+    device/htc/vivow/prebuilt/usbmon.ko:system/lib/modules/usbmon.ko \
+    device/htc/vivow/prebuilt/zram.ko:system/lib/modules/zram.ko \
+    device/htc/vivow/prebuilt/zram:system/bin/zram
+
 
 # stuff common to all HTC phones
 $(call inherit-product, device/htc/common/common.mk)
